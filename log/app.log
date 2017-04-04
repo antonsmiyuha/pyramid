@@ -1,0 +1,44 @@
+2017-04-04 19:02:31,941 ERROR [pyramid_debugtoolbar:233][waitress] Exception at http://pyramid.app:6543/feedback
+traceback url: http://pyramid.app:6543/_debug_toolbar/exception?token=11fd0c2d6a4e0fbfe387&tb=140149775680848
+Traceback (most recent call last):
+  File "/var/www/piramid/env/lib/python2.7/site-packages/pyramid_debugtoolbar-3.0.5-py2.7.egg/pyramid_debugtoolbar/toolbar.py", line 215, in toolbar_tween
+    response = _handler(request)
+  File "/var/www/piramid/env/lib/python2.7/site-packages/pyramid_debugtoolbar-3.0.5-py2.7.egg/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/var/www/piramid/env/lib/python2.7/site-packages/pyramid_debugtoolbar-3.0.5-py2.7.egg/pyramid_debugtoolbar/panels/performance.py", line 87, in profile_handler
+    result = self.profiler.runcall(handler, request)
+  File "/usr/lib/python2.7/cProfile.py", line 149, in runcall
+    return func(*args, **kw)
+  File "/var/www/piramid/env/lib/python2.7/site-packages/pyramid-1.8.3-py2.7.egg/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/var/www/piramid/env/lib/python2.7/site-packages/pyramid-1.8.3-py2.7.egg/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/var/www/piramid/env/lib/python2.7/site-packages/pyramid_tm-1.1.1-py2.7.egg/pyramid_tm/__init__.py", line 119, in tm_tween
+    reraise(*exc_info)
+  File "/var/www/piramid/env/lib/python2.7/site-packages/pyramid_tm-1.1.1-py2.7.egg/pyramid_tm/__init__.py", line 98, in tm_tween
+    response = handler(request)
+  File "/var/www/piramid/env/lib/python2.7/site-packages/pyramid-1.8.3-py2.7.egg/pyramid/router.py", line 155, in handle_request
+    view_name
+  File "/var/www/piramid/env/lib/python2.7/site-packages/pyramid-1.8.3-py2.7.egg/pyramid/view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "/var/www/piramid/env/lib/python2.7/site-packages/pyramid-1.8.3-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/var/www/piramid/env/lib/python2.7/site-packages/pyramid-1.8.3-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/var/www/piramid/feedback/feedback/views/feedback.py", line 19, in my_view
+    feedback_data['asd']
+TypeError: list indices must be integers, not str
+2017-04-04 19:03:16,674 ERROR [root:19][waitress] test
+2017-04-04 19:03:17,297 ERROR [root:19][waitress] test
+2017-04-04 19:03:17,487 ERROR [root:19][waitress] test
+2017-04-04 19:03:17,879 ERROR [root:19][waitress] test
+2017-04-04 19:03:18,061 ERROR [root:19][waitress] test
+2017-04-04 19:03:18,220 ERROR [root:19][waitress] test
+2017-04-04 19:03:18,368 ERROR [root:19][waitress] test
+2017-04-04 19:03:18,521 ERROR [root:19][waitress] test
+2017-04-04 19:03:18,664 ERROR [root:19][waitress] test
+2017-04-04 19:03:18,823 ERROR [root:19][waitress] test
+2017-04-04 19:03:18,980 ERROR [root:19][waitress] test
+2017-04-04 19:03:19,146 ERROR [root:19][waitress] test
+2017-04-04 19:03:19,303 ERROR [root:19][waitress] test
+2017-04-04 19:03:19,459 ERROR [root:19][waitress] test
