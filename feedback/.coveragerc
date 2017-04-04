@@ -1,0 +1,3 @@
+[run]
+source = feedback
+omit = feedback/test*
